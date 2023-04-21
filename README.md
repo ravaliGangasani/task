@@ -11,7 +11,7 @@
 - Run `go run main.go` to run the REST server
 
 # Request Body
-``` sh
+``` 
 type RequestBody struct {
 	ChaincodeID string   `json:"chain_code_id"`
 	ChannelID   string   `json:"channel_id"`
@@ -22,7 +22,8 @@ type RequestBody struct {
 
 # Request Example
 - Initiate a shipment
-```url: http://localhost:3000/invoke
+```
+   url: http://localhost:3000/invoke
    sample request body: 
    {
     "chain_code_id":"basic",
@@ -33,7 +34,8 @@ type RequestBody struct {
 ```
 
 - Update shipment status
-```url: http://localhost:3000/invoke
+```
+   url: http://localhost:3000/invoke
    sample request body: 
    {
     "chain_code_id":"basic",
